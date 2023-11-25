@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iris flower prediction</title>
+</head>
+<body>
+    <h1 align="center">IRIS FLOWER PREDICTION</h1>
+        <p align="center"><img src="{{url_for('static',filename='iris image.jpg')}}" style="width:800px;height:320px;"/></p>
+    <form  action="/predict" method="post">
+        <label for="SL">Enter the Sepal Length:</label>
+        <input type="text" name="SL" required><br>
+        <label for="SW">Enter the Sepal Width:</label>
+        <input type="text" name="SW" required><br>
+        <label for="PL">Enter the Petal Length:</label>
+        <input type="text" name="PL" required><br>
+        <label for="PW">Enter the Petal Width:</label>
+        <input type="text" name="PW" required><br>
+
+        <input type="submit" value="Predict">
+    </form>
+    
+</body>
+</html>
